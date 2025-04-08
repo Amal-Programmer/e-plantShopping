@@ -75,7 +75,7 @@ const CartItem = ({ onContinueShopping }) => {
       <div className="continue_shopping_btn">
         <button className="get-started-button" onClick={(e) => handleContinueShopping(e)}>Continue Shopping</button>
         <br />
-        <button className="get-started-button1" onClick={handleCheckoutShopping}>Checkout</button>
+        <button className="get-started-button1" onClick={(e)=>{handleCheckoutShopping(e), handleContinueShopping(e)}}>Checkout</button>
       </div>
     </div>
   );
