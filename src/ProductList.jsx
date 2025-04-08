@@ -321,7 +321,7 @@ const handlePlantsClick = (e) => {
         strokeLinejoin="round"
         strokeWidth="2"
       ></path>
-       {numberSelectedItems > 0 && (
+       {numberSelectedItems >= 0 && (
         <text
           x="130"
           y="145"
